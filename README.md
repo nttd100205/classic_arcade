@@ -1,0 +1,1 @@
+Our primary objective is to develop a functional and visually appealing arcade website that combines classic gameplay with basic user accounts and ongoing score tracking. This project will illustrate our group's ability to develop interactive front-end applications and link them to a back-end for storing and retrieving data.
