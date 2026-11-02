@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>2048 | Classic Arcade</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/shared.js"></script>
+    <script defer src="js/2048.js"></script>
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="index.html">◆ CLASSIC ARCADE</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#scores">Leaderboards</a>
+      </nav>
+      <button id="theme">☾ Theme</button>
+    </header>
+    <main class="gamepage">
+      <a href="index.html">← Back to arcade</a>
+      <div class="gamehead">
+        <div>
+          <small>ARCADE CABINET</small>
+          <h1>2048</h1>
+          <p>Combine matching tiles to reach 2048.</p>
+        </div>
+        <div class="scorebox">SCORE<strong id="score">0</strong></div>
+      </div>
+      <div class="toolbar">
+        <span>Arrow keys or swipe · Palette</span>
+        <button class="btn" id="start">New game</button>
+      </div>
+      <label>
+        Tile palette
+        <select id="palette">
+          <option value="classic">Classic</option>
+          <option value="ocean">Ocean</option>
+          <option value="sunset">Sunset</option>
+        </select>
+      </label>
+      <div id="board" class="board"></div>
+      <p id="message" class="message">Use arrow keys or swipe to move.</p>
+      <article class="instructions">
+        <h3>How to play</h3>
+        <p>Use the arrow keys or swipe to slide all tiles. Matching numbers merge into one. Keep combining tiles and try to reach 2048 before you run out of moves.</p>
+        <p class="note">Your scores are saved locally in this browser.</p>
+      </article>
+    </main>
+    <footer>CLASSIC ARCADE <span>2048 · Keep playing.</span></footer>
+  </body>
+</html>

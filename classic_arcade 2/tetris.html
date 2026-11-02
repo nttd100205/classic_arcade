@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Tetris | Classic Arcade</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/shared.js"></script>
+    <script defer src="js/tetris.js"></script>
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="index.html">◆ CLASSIC ARCADE</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#scores">Leaderboards</a>
+      </nav>
+      <button id="theme">☾ Theme</button>
+    </header>
+    <main class="gamepage">
+      <a href="index.html">← Back to arcade</a>
+      <div class="gamehead">
+        <div>
+          <small>ARCADE CABINET</small>
+          <h1>Tetris</h1>
+          <p>Arrange the falling pieces and clear lines.</p>
+        </div>
+        <div class="scorebox">SCORE<strong id="score">0</strong></div>
+      </div>
+      <div class="toolbar">
+        <span>← → move · ↑ rotate · ↓ drop · Space hard drop · P pause</span>
+        <button class="btn" id="start">Start / Restart</button>
+      </div>
+      <div class="tetris">
+        <canvas id="game" width="300" height="600"></canvas>
+        <aside>LINES<strong id="lines">0</strong>LEVEL<strong id="level">1</strong></aside>
+      </div>
+      <p id="message" class="message">Press Start to play.</p>
+      <article class="instructions">
+        <h3>How to play</h3>
+        <p>Move falling pieces left and right, rotate them, and fit them together to complete horizontal lines. Completed lines disappear and earn points. The game ends when the stack reaches the top.</p>
+        <p class="note">Your scores are saved locally in this browser.</p>
+      </article>
+    </main>
+    <footer>CLASSIC ARCADE <span>Tetris · Keep playing.</span></footer>
+  </body>
+</html>

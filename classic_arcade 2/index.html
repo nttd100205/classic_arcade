@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Classic Arcade</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/home.js"></script>
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="index.html">◆ CLASSIC ARCADE</a>
+      <nav>
+        <a href="#games">Games</a>
+        <a href="#scores">Leaderboards</a>
+        <a href="#stats">My Stats</a>
+      </nav>
+      <button id="theme">☾ Theme</button>
+    </header>
+    <main>
+      <section class="hero">
+        <small>INSERT COIN · START PLAYING</small>
+        <h1>Your next high score<br><em>starts here.</em></h1>
+        <p>Three classic games. One arcade. How high can you score?</p>
+        <a class="btn" href="#games">Explore the games ↓</a>
+      </section>
+      <section id="games">
+        <small>THE ARCADE</small>
+        <h2>Choose your game</h2>
+        <div class="cards">
+          <article>
+            <div class="art tiles">2　0　4　8</div>
+            <h3>2048</h3>
+            <p>Slide, combine, and build your way to 2048.</p>
+            <a class="btn" href="2048.html">Play 2048 →</a>
+          </article>
+          <article>
+            <div class="art snakeart">🟩🟩🟩　🔴</div>
+            <h3>Snake</h3>
+            <p>Eat, grow, and avoid running into yourself.</p>
+            <a class="btn" href="snake.html">Play Snake →</a>
+          </article>
+          <article>
+            <div class="art tetrisart">🟦🟪🟧</div>
+            <h3>Tetris</h3>
+            <p>Fit falling pieces together and clear lines.</p>
+            <a class="btn" href="tetris.html">Play Tetris →</a>
+          </article>
+        </div>
+      </section>
+      <section id="scores">
+        <small>THE HALL OF FAME</small>
+        <h2>Local leaderboards</h2>
+        <div class="cards">
+          <article>
+            <h3>2048</h3>
+            <ol id="b2048"></ol>
+          </article>
+          <article>
+            <h3>Snake</h3>
+            <ol id="bSnake"></ol>
+          </article>
+          <article>
+            <h3>Tetris</h3>
+            <ol id="bTetris"></ol>
+          </article>
+        </div>
+      </section>
+      <section id="stats">
+        <small>PLAYER PROFILE</small>
+        <h2>Your arcade stats</h2>
+        <div class="stats">
+          <article>GAMES PLAYED<strong id="played">0</strong></article>
+          <article>TOP SCORE<strong id="top">0</strong></article>
+          <article>SCORES SAVED<strong id="saved">0</strong></article>
+        </div>
+        <p class="note">Scores and preferences are saved in this browser only. There are no accounts or shared global rankings in this version.</p>
+      </section>
+    </main>
+    <footer>CLASSIC ARCADE <span>Built for the love of the game.</span></footer>
+  </body>
+</html>

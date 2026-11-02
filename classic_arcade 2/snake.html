@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Snake | Classic Arcade</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/shared.js"></script>
+    <script defer src="js/snake.js"></script>
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="index.html">◆ CLASSIC ARCADE</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#scores">Leaderboards</a>
+      </nav>
+      <button id="theme">☾ Theme</button>
+    </header>
+    <main class="gamepage">
+      <a href="index.html">← Back to arcade</a>
+      <div class="gamehead">
+        <div>
+          <small>ARCADE CABINET</small>
+          <h1>Snake</h1>
+          <p>Eat the food. Grow your snake. Don't crash.</p>
+        </div>
+        <div class="scorebox">SCORE<strong id="score">0</strong></div>
+      </div>
+      <div class="toolbar">
+        <span>Arrow keys or WASD</span>
+        <button class="btn" id="start">Start / Restart</button>
+      </div>
+      <canvas id="game" width="480" height="480"></canvas>
+      <div class="touch"><button data-d="up">↑</button><br>
+        <button data-d="left">←</button><button data-d="down">↓</button><button data-d="right">→</button>
+      </div>
+      <p id="message" class="message">Press Start or an arrow key to begin.</p>
+      <article class="instructions">
+        <h3>How to play</h3>
+        <p>Guide the snake toward the food. Each piece of food adds points and makes the snake longer. Avoid the walls and your own tail.</p>
+        <p class="note">Your scores are saved locally in this browser.</p>
+      </article>
+    </main>
+    <footer>CLASSIC ARCADE <span>Snake · Keep playing.</span></footer>
+  </body>
+</html>
