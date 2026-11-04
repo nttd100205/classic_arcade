@@ -74,15 +74,9 @@
   }
 
   function rotate() {
-    let m = p.m;
-    for (let y = 0; y < m.length; y++)
-      for (let z = 0; z < y; z++)[m[z][y], m[y][z]] = [m[y][z], m[z][y]];
-    m.forEach(r => r.reverse());
-    if (hit()) {
-      m.forEach(r => r.reverse());
-      for (let y = 0; y < m.length; y++)
-        for (let z = 0; z < y; z++)[m[z][y], m[y][z]] = [m[y][z], m[z][y]]
-    }
+    let original = p.m;
+    p.m = original[0].map((_, column) => original.map(row => row[column]).reverse());
+    if (hit()) p.m = original
   }
 
   function sweep() {
